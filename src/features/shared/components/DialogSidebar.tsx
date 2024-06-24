@@ -2,6 +2,7 @@ export default function DialogSidebar() {
     return (
         <div className="sidebar">
             <div className="sidebar-top">
+                <hr/>
                 <h2>Hierarchy</h2>
                 <hr/>
                 <div className="hierarchy">
@@ -9,6 +10,7 @@ export default function DialogSidebar() {
                 </div>
             </div>
             <div className="sidebar-bottom">
+                <hr/>
                 <h2>Properties</h2>
                 <hr/>
                 <div className="properties">

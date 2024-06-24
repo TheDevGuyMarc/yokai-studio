@@ -1,5 +1,6 @@
 import {Wrapper} from "../../shared/components/Wrapper.styles";
 import Sidebar from "../shared/components/Sidebar";
+import UtilityBarComponent from "../../shared/components/UtilityBarComponent";
 
 export default function NPCEditor() {
     return (
@@ -11,8 +12,8 @@ export default function NPCEditor() {
                     <div className="editor">
 
                     </div>
-                    <div className="json-viewer">
-
+                    <div className="utility-bar ">
+                        <UtilityBarComponent/>
                     </div>
                 </div>
             </Wrapper>

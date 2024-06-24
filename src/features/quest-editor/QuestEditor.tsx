@@ -1,5 +1,6 @@
 import {Wrapper} from "../../shared/components/Wrapper.styles";
 import DialogSidebar from "../shared/components/DialogSidebar";
+import UtilityBarComponent from "../../shared/components/UtilityBarComponent";
 
 
 export default function QuestEditor() {
@@ -12,8 +13,8 @@ export default function QuestEditor() {
                     <div className="editor">
 
                     </div>
-                    <div className="json-viewer">
-
+                    <div className="utility-bar ">
+                        <UtilityBarComponent/>
                     </div>
                 </div>
             </Wrapper>
