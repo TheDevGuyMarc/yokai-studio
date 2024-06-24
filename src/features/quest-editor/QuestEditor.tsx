@@ -11,7 +11,13 @@ export default function QuestEditor() {
 
                 <div className="content">
                     <div className="editor">
+                        <div className="toolbar">
 
+                        </div>
+
+                        <div className="editor-content">
+
+                        </div>
                     </div>
                     <div className="utility-bar ">
                         <UtilityBarComponent/>

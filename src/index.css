@@ -29,6 +29,7 @@ code {
   flex-direction: column;
   /*background-color: #1976d2;*/
   /*box-shadow: 2px 0 5px rgba(248, 248, 248, 0.1);*/
+  margin-top: 5px;
 }
 
 .sidebar h2 {
@@ -40,6 +41,7 @@ code {
   flex: 1;
   /*border: 1px solid #ccc;*/
   background-color: #1976d2;
+  overflow-y: auto; /* Falls der Inhalt scrollen soll */
 }
 
 .assets {
@@ -52,6 +54,7 @@ code {
   /*border: 1px solid #ccc;*/
   margin-top: 10px;
   background-color: #1976d2;
+  overflow-y: auto; /* Falls der Inhalt scrollen soll */
 }
 
 .properties {
@@ -70,6 +73,7 @@ code {
   flex: 70%;
   overflow-y: auto; /* Falls der Inhalt scrollen soll */
   /*border: 1px solid #ccc;*/
+  margin-top: 5px;
 }
 
 .utility-bar {
@@ -85,4 +89,16 @@ code {
 
 .console {
   height: 160px;
+}
+
+.toolbar {
+  border: 1px solid #ccc;
+  max-height: 12%;
+  min-height: 10%;
+}
+
+.editor-content {
+  border: 1px solid #ccc;
+  max-height: 87%;
+  min-height: 87%;
 }
