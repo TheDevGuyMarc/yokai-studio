@@ -13,7 +13,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 
-const pages = ['Level-Editor', 'NPC-Editor', 'Story-Editor', 'Quest-Editor', 'Item-Editor'];
+const pages = ['Level-Editor', 'NPC-Editor', 'Dialog-Editor', 'Quest-Editor', 'Item-Editor'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function NavbarComponent() {

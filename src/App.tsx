@@ -12,6 +12,8 @@ import {Wrapper} from "./shared/components/Wrapper.styles";
 import NavbarComponent from "./shared/components/NavbarComponent";
 import LevelEditor from "./features/level-editor/LevelEditor";
 import NPCEditor from "./features/npc-editor/NPCEditor";
+import DialogEditor from "./features/dialog-editor/DialogEditor";
+import QuestEditor from "./features/quest-editor/QuestEditor";
 
 
 
@@ -50,8 +52,8 @@ function App() {
             <Route path={"/"} />
             <Route path={"/level-editor"} element={<LevelEditor/>}/>
             <Route path="/npc-editor" element={<NPCEditor/>} />
-            {/*<Route path="/story-editor" component={LevelEditor} />*/}
-            {/*<Route path="/quest-editor" component={LevelEditor} />*/}
+            <Route path="/dialog-editor" element={<DialogEditor/>} />
+            <Route path="/quest-editor" element={<QuestEditor/>} />
             <Route path="/item-editor" element={<LevelEditor/>} />
           </Routes>
         </Wrapper>
