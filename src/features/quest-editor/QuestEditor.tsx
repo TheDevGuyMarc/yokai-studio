@@ -1,13 +1,13 @@
 import {Wrapper} from "../../shared/components/Wrapper.styles";
-import DialogSidebar from "../shared/components/DialogSidebar";
 import UtilityBarComponent from "../../shared/components/UtilityBarComponent";
+import Sidebar from "../shared/components/Sidebar";
 
 
 export default function QuestEditor() {
     return (
         <>
             <Wrapper className="container">
-                <DialogSidebar/>
+                <Sidebar/>
 
                 <div className="content">
                     <div className="editor">

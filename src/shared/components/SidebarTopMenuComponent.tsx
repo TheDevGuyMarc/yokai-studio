@@ -4,13 +4,32 @@ import Tab from '@mui/material/Tab';
 import TabContext from '@mui/lab/TabContext';
 import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
+import {useLocation} from "react-router-dom";
 
 export default function SidebarTopMenuComponent() {
     const [value, setValue] = React.useState('1');
+    const location = useLocation();
 
     const handleChange = (event: React.SyntheticEvent, newValue: string) => {
         setValue(newValue);
     };
+
+    if (location.pathname === '/dialog-editor' || location.pathname === '/quest-editor') {
+        return (
+            <Box sx={{ width: '100%', typography: 'body1' }}>
+                <TabContext value={value}>
+                    <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+                        <TabList onChange={handleChange} aria-label="lab API tabs example">
+                            <Tab label="Hierarchy" value="1" />
+                        </TabList>
+                    </Box>
+                    <TabPanel value="1">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque distinctio harum illo perferendis, perspiciatis quam quia sequi. Repellat sapiente, voluptas.
+                    </TabPanel>
+                </TabContext>
+            </Box>
+        );
+    }
 
     return (
         <Box sx={{ width: '100%', typography: 'body1' }}>
