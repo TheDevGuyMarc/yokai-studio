@@ -1,5 +1,5 @@
 import {Wrapper} from "../../shared/components/Wrapper.styles";
-import Sidebar from "../level-editor/components/Sidebar";
+import Sidebar from "../shared/components/Sidebar";
 
 export default function ItemEditor() {
     return (

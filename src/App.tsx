@@ -14,6 +14,7 @@ import LevelEditor from "./features/level-editor/LevelEditor";
 import NPCEditor from "./features/npc-editor/NPCEditor";
 import DialogEditor from "./features/dialog-editor/DialogEditor";
 import QuestEditor from "./features/quest-editor/QuestEditor";
+import Welcome from "./shared/components/Welcome";
 
 
 
@@ -49,7 +50,7 @@ function App() {
           <NavbarComponent></NavbarComponent>
 
           <Routes>
-            <Route path={"/"} />
+            <Route path={"/"} element={<Welcome/>}/>
             <Route path={"/level-editor"} element={<LevelEditor/>}/>
             <Route path="/npc-editor" element={<NPCEditor/>} />
             <Route path="/dialog-editor" element={<DialogEditor/>} />

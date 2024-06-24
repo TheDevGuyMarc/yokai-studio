@@ -1,5 +1,5 @@
 import {Wrapper} from "../../shared/components/Wrapper.styles";
-import DialogSidebar from "../dialog-editor/components/DialogSidebar";
+import DialogSidebar from "../shared/components/DialogSidebar";
 
 
 export default function QuestEditor() {
