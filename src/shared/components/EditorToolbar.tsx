@@ -8,7 +8,7 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import Brush from '@mui/icons-material/Brush';
 import {AddBox, Redo, Undo} from "@mui/icons-material";
 
-export default function DialogToolBar() {
+export default function EditorToolbar() {
     return (
         <Box sx={{ flexGrow: 1 }}>
             <AppBar position="static">

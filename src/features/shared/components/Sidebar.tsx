@@ -1,4 +1,4 @@
-import SidebarTopMenuComponent from "../../../shared/components/SidebarTopMenuComponent";
+import SidebarTopMenuComponent from "../../../shared/components/sidebar/hierarchy/SidebarTopMenuComponent";
 import SidebarBottomMenuComponent from "../../../shared/components/SidebarBottomMenuComponent";
 
 export default function Sidebar() {

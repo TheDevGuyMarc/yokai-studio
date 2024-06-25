@@ -17,6 +17,10 @@ code {
   monospace;
 }
 
+ul {
+  list-style-type: none;
+}
+
 /* Level Editor */
 .container {
   display: flex;
@@ -92,13 +96,45 @@ code {
 }
 
 .toolbar {
-  border: 1px solid #ccc;
+  /*border: 1px solid #ccc;*/
   max-height: 12%;
   min-height: 10%;
 }
 
 .editor-content {
-  border: 1px solid #ccc;
+  /*border: 1px solid #ccc;*/
   max-height: 87%;
   min-height: 87%;
+}
+
+.welcome {
+  background-color: #cccccc;
+  width: 100%;
+  height: 90.5vh;
+  padding-top: 10px;
+}
+
+.welcome-container {
+  width: 300px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.welcome-content {
+  margin: 20px auto 0;
+  width: 70%;
+  text-align: justify;
+}
+
+.welcome-content h1 {
+  text-align: center;
+}
+
+textarea {
+  width: 99.1%;
+  min-height: 477px;
+  max-height: 477px;
+  background-color: #eaeaea;
+  color: #000 !important;
+  padding: 5px;
 }

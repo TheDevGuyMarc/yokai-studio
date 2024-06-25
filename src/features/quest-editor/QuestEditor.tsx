@@ -1,6 +1,7 @@
 import {Wrapper} from "../../shared/components/Wrapper.styles";
 import UtilityBarComponent from "../../shared/components/UtilityBarComponent";
 import Sidebar from "../shared/components/Sidebar";
+import EditorToolbar from "../../shared/components/EditorToolbar";
 
 
 export default function QuestEditor() {
@@ -12,7 +13,7 @@ export default function QuestEditor() {
                 <div className="content">
                     <div className="editor">
                         <div className="toolbar">
-
+                            <EditorToolbar/>
                         </div>
 
                         <div className="editor-content">

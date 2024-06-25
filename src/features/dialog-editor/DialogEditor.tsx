@@ -1,7 +1,8 @@
 import {Wrapper} from "../../shared/components/Wrapper.styles";
 import UtilityBarComponent from "../../shared/components/UtilityBarComponent";
 import Sidebar from "../shared/components/Sidebar";
-import DialogToolBar from "./components/DialogToolBar";
+import EditorToolbar from "../../shared/components/EditorToolbar";
+import EditorComponent from "../../shared/components/EditorComponent";
 
 export default function DialogEditor() {
     return (
@@ -12,11 +13,11 @@ export default function DialogEditor() {
                 <div className="content">
                     <div className="editor">
                         <div className="toolbar">
-                            <DialogToolBar/>
+                            <EditorToolbar/>
                         </div>
 
                         <div className="editor-content">
-
+                            <EditorComponent/>
                         </div>
                     </div>
                     <div className="utility-bar">
