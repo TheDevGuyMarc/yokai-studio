@@ -1,4 +1,4 @@
-import {SetStateAction, useEffect, useState} from "react";
+import {useEffect, useState} from "react";
 import {JsonHierarchy} from "./JsonHierarchy";
 import {Box, Typography, CircularProgress, List, ListItem, ListItemText} from "@mui/material";
 import Node from './Node';
@@ -6,6 +6,7 @@ import Node from './Node';
 export default function HierarchyViewer(props: {filePath: string}) {
     const [hierarchy, setHierarchy] = useState<Node | null>(null);
     const [loading, setLoading] = useState(true);
+    const [selectedNode, setSelectedNode] = useState<string | null>(null);
 
     useEffect(() => {
         const loadHierarchy = async () => {
@@ -24,9 +25,29 @@ export default function HierarchyViewer(props: {filePath: string}) {
         loadHierarchy();
     }, [props.filePath]);
 
+    const handleNodeClick = (nodeID: string) => {
+        setSelectedNode(nodeID);
+    };
+
     const renderNode = (node: Node) => (
         <List component="div" disablePadding key={node.id}>
-            <ListItem>
+            <ListItem
+                button
+                selected={node.id === selectedNode}
+                onClick={() => handleNodeClick(node.id)}
+                sx={{
+                    "&.Mui-selected": {
+                        backgroundColor: "lightblue",
+                        "&:hover": {
+                            backgroundColor: "blue",
+                            color: "white",
+                        },
+                    },
+                    "&:hover": {
+                        backgroundColor: "lightgray",
+                    },
+                }}
+            >
                 <ListItemText primary={node.name} />
             </ListItem>
             {node.children && node.children.length > 0 && (

@@ -103,8 +103,10 @@ ul {
 
 .editor-content {
   /*border: 1px solid #ccc;*/
-  max-height: 87%;
-  min-height: 87%;
+  max-height: 85%;
+  min-height: 84%;
+  background-color: #0a2d50;
+  padding: 10px;
 }
 
 .welcome {
@@ -130,11 +132,11 @@ ul {
   text-align: center;
 }
 
-textarea {
+/*textarea {
   width: 99.1%;
   min-height: 477px;
   max-height: 477px;
   background-color: #eaeaea;
   color: #000 !important;
   padding: 5px;
-}
+}*/
